@@ -35,7 +35,7 @@ def get_prediction():
     #convert ino data frame
     baby_df = pd.DataFrame(baby_data_cleand)
     #load ML tarined maiodel
-    with open("model/model.pkl", 'rb') as obj:
+    with open("model.pkl", 'rb') as obj:
         model = pickle.load(obj)
 
 
