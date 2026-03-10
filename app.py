@@ -26,7 +26,7 @@ def get_cleaned_data(form_data):
                 }
     return cleaned_data
 
-@app.route('/predict', methods=['Post'])
+@app.route('/predict', methods=['POST'])
 def get_prediction():
     #get data from user
     baby_data_form = request.form
