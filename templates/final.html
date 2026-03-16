@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Form</title>
+
+        <style>
+
+            body{
+                margin:0;
+                height:100vh;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                background:linear-gradient(135deg,#6a11cb,#2575fc);
+                font-family:Arial, sans-serif;
+            }
+
+            .container{
+                text-align:center;
+                background:white;
+                padding:40px;
+                border-radius:12px;
+                box-shadow:0 10px 25px rgba(0,0,0,0.2);
+            }
+
+            h1{
+                margin-bottom:20px;
+                color:#333;
+            }
+
+            button{
+                padding:12px 25px;
+                border:none;
+                border-radius:8px;
+                background:#2575fc;
+                color:white;
+                font-size:16px;
+                cursor:pointer;
+                transition:0.3s;
+            }
+
+            button:hover{
+                background:#1a5ed8;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+
+        {% if responce %}
+            <h1>Your Baby's Weight : {{ responce.prediction }}</h1>
+        {% endif %}
+
+        
+
+    </body>
+</html>

@@ -52,7 +52,7 @@ def get_prediction():
 
     responce={"prediction" : prediction}
 
-    return render_template('index.html', responce=responce)
+    return render_template('final.html', responce=responce)
 
 
 
