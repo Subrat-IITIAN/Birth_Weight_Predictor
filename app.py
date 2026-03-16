@@ -8,6 +8,10 @@ app = Flask(__name__)
 ## endpoints
 @app.route('/', methods=['GET'])
 def home():
+    return render_template('home.html')
+
+@app.route('/form', methods=['POST'])
+def home2():
     return render_template('index.html')
 def get_cleaned_data(form_data):
     gestation = float(form_data['gestation'])
